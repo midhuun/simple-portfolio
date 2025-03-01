@@ -1,5 +1,12 @@
+import {motion} from 'framer-motion';
 const About = () =>{
     return (
+        <motion.div
+    initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }} // Start blurred, small & hidden
+    animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }} // Smoothly appear, scale up & remove blur
+    transition={{ duration: 1.5, ease: "easeOut" }} // Smooth cinematic transition
+    className=""
+  >
         <div className="mt-12 w-full flex justify-center md:mt-28" > 
         <div className="max-w-[650px] flex  flex-col">
             <h1 className="md:text-5xl p-3 text-2xl font-bold text-start">About Midhun </h1>
@@ -17,6 +24,7 @@ Then one day, out of nowhere, I got a call from a guy saying my professor had re
 Fast forward a few months—I started loving coding. Now, I’m on a journey to master Full-Stack Development, where I truly believe my future lies (hopefully, with fewer volleyball distractions). 😆🔥</p>
         </div>
         </div>
+        </motion.div>
     )
 }
 export default About;

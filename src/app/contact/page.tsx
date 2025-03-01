@@ -1,7 +1,13 @@
 import { Mail, Phone, MapPin } from "lucide-react";
-
+import {motion} from 'framer-motion';
 const Contact = () => {
   return (
+    <motion.div
+    initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }} // Start blurred, small & hidden
+    animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }} // Smoothly appear, scale up & remove blur
+    transition={{ duration: 1.5, ease: "easeOut" }} // Smooth cinematic transition
+    className=""
+  >
     <div className="min-h-screen flex flex-col items-center justify-center px-6 py-10">
       <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Get in Touch</h2>
 
@@ -60,6 +66,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
+    </motion.div>
   );
 };
 
