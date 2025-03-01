@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/no-unescaped-entities
 "use client"; // Ensure this runs only on the client-side
 import Info from "@/components/Navbar/Home/home";
 import { motion } from "framer-motion";

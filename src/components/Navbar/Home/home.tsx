@@ -16,7 +16,7 @@ const Info = () =>{
           
           {/* Work Grid */}
           <div className="grid md:grid-cols-3 sm:grid-cols-2 p-3 grid-cols-1 gap-4 md:my-5 my-3">
-            {workExperience.map((work) => (
+            {workExperience.map((work:WorkType) => (
               <Work link={work.link} key={work.title} img={work.img} title={work.title} date={work.date} company={work.company} />
             ))}
           </div>
