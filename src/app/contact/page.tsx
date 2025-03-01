@@ -1,3 +1,4 @@
+'use client';
 import { Mail, Phone, MapPin } from "lucide-react";
 import {motion} from 'framer-motion';
 const Contact = () => {
@@ -20,11 +21,11 @@ const Contact = () => {
           </div>
           <div className="flex items-center gap-3 mt-4 md:mt-0">
             <Phone className="text-[var(--secondary)] w-6 h-6" />
-            <p className="text-[var(--foreground)] text-sm md:text-md">+91 8778838697</p>
+            <p className="text-[var(--foreground)] font-mono text-sm md:text-md">+91 8778838697</p>
           </div>
           <div className="flex items-center gap-3 mt-4 md:mt-0">
             <MapPin className="text-[var(--secondary)] w-6 h-6" />
-            <p className="text-[var(--foreground)] text-sm md:text-md">Karur, Tamil Nadu, India</p>
+            <p className="text-[var(--foreground)] text-sm md:text-md">Banglore,karnataka, India</p>
           </div>
         </div>
 

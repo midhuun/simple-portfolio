@@ -1,4 +1,7 @@
+// eslint-disable-next-line react/no-unescaped-entities
+'use client';
 import {motion} from 'framer-motion';
+import Link from 'next/link';
 const About = () =>{
     return (
         <motion.div
@@ -8,6 +11,7 @@ const About = () =>{
     className=""
   >
         <div className="mt-12 w-full flex justify-center md:mt-28" > 
+        
         <div className="max-w-[650px] flex  flex-col">
             <h1 className="md:text-5xl p-3 text-2xl font-bold text-start">About Midhun </h1>
             <p className="p-3 tracking-wider leading-8 text-[var(--secondary)] text-md md:text-lg">
@@ -24,6 +28,14 @@ Then one day, out of nowhere, I got a call from a guy saying my professor had re
 Fast forward a few months—I started loving coding. Now, I’m on a journey to master Full-Stack Development, where I truly believe my future lies (hopefully, with fewer volleyball distractions). 😆🔥</p>
         </div>
         </div>
+        <div className=" md:my-8 my-4 w-full flex justify-center">
+        <Link
+          href="/contact"
+          className="px-6 py-3 bg-[var(--foreground)] text-[var(--background)] rounded-lg text-lg font-semibold hover:opacity-80 transition-all"
+        >
+          Let's Connect 🚀
+        </Link>
+      </div>
         </motion.div>
     )
 }

@@ -1,3 +1,4 @@
+'use client';
 import { ProjectProps } from "@/types/types"
 import { projects } from "@/utils/projects"
 import ProjectCard from "./project"
