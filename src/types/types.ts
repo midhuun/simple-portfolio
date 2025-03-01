@@ -15,3 +15,9 @@ export interface ProjectProps {
     techStack: string[];
   }
   
+export interface TestimonialType {
+    name: string,
+    company:string,
+    img:string,
+    desc:string
+}
