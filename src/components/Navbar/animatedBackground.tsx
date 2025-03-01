@@ -2,7 +2,7 @@ const words = ["Full-Stack Developer", "React.js", "Next.js", "MERN Stack", "Fre
 
 const AnimatedBackground = () => {
   return (
-    <div className="absolute inset-0 flex flex-wrap justify-center items-center pointer-events-none">
+    <div className="absolute inset-0 overflow-hidden w-full flex flex-wrap justify-center items-center pointer-events-none">
       {words.map((word, index) => (
         <span
           key={index}
