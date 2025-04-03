@@ -1,9 +1,9 @@
-import { ProjectProps } from "@/types/types";
-import Image from "next/image";
+import { ProjectProps } from '@/types/types';
+import Image from 'next/image';
 
-const ProjectCard = ({ title, role, img, link, desc, techStack }:ProjectProps) => {
+const ProjectCard = ({ title, role, img, link, desc, techStack }: ProjectProps) => {
   return (
-    <div className="bg-[#1e1e1e] p-6 rounded-2xl shadow-lg transition-transform hover:-translate-y-2 duration-300">
+    <div className="bg-[#1e1e1e] p-6 work rounded-2xl shadow-lg transition-transform hover:-translate-y-2 duration-300">
       {/* Image Section */}
       <div className="relative w-full h-40 rounded-lg overflow-hidden">
         <Image src={img} alt={title} layout="fill" objectFit="cover" />
@@ -17,12 +17,9 @@ const ProjectCard = ({ title, role, img, link, desc, techStack }:ProjectProps) =
         <p className="text-gray-300 text-sm mt-2">{desc}</p>
 
         {/* Tech Stack */}
-        <div className="mt-3 flex flex-wrap gap-2">
+        <div className="mt-3  flex flex-wrap gap-2">
           {techStack.map((tech, index) => (
-            <span
-              key={index}
-              className="px-3 py-1 text-xs bg-gray-800 text-gray-200 rounded-full"
-            >
+            <span key={index} className="px-3  py-1 text-xs bg-gray-800 text-gray-200 rounded-full">
               {tech}
             </span>
           ))}
