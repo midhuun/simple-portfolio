@@ -27,7 +27,7 @@ const Links = () => {
       </div>
 
       {/* Mobile Hamburger Button */}
-      <div onClick={() => setisMenuOpen(true)} className="md:hidden mt-1 cursor-pointer">
+      <div onClick={() => setisMenuOpen(true)} className="md:hidden mt-2 mr-2 cursor-pointer">
         <div className="h-[2px] mb-1 w-6 bg-[var(--logo)]"></div>
         <div className="h-[2px] mb-1 w-6 bg-[var(--logo)]"></div>
         <div className="h-[2px] mb-1 w-6 bg-[var(--logo)]"></div>
@@ -50,7 +50,7 @@ const Links = () => {
         {/* Mobile Navigation Links */}
         <nav className="flex flex-col gap-4">
           {['/', '/work', '/about', '/contact'].map((route, index) => (
-            <Link key={index} href={route}>
+            <Link onClick={() => setisMenuOpen(false)} key={index} href={route}>
               <p
                 className={`text-white text-2xl font-medium hover:underline ${
                   path === route ? 'underline' : ''
