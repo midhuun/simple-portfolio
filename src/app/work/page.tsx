@@ -1,11 +1,11 @@
-"use client";
-import { useState, useEffect, useRef } from "react";
-import { ProjectProps, TestimonialType } from "@/types/types";
-import { projects } from "@/utils/projects";
-import ProjectCard from "./project";
-import { motion } from "framer-motion";
-import { testimonials } from "@/utils/testimonials";
-import Testimonial from "./testimonialCard";
+'use client';
+import { useState, useEffect, useRef } from 'react';
+import { ProjectProps } from '@/types/types';
+import { projects } from '@/utils/projects';
+import ProjectCard from './project';
+import { motion } from 'framer-motion';
+import { testimonials } from '@/utils/testimonials';
+import Testimonial from './testimonialCard';
 
 const FreelanceProjects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,9 +31,9 @@ const FreelanceProjects = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }} // Start blurred, small & hidden
-      animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }} // Smoothly appear, scale up & remove blur
-      transition={{ duration: 1.5, ease: "easeOut" }} // Smooth cinematic transition
+      initial={{ opacity: 0, scale: 0.95, filter: 'blur(10px)' }} // Start blurred, small & hidden
+      animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }} // Smoothly appear, scale up & remove blur
+      transition={{ duration: 1.5, ease: 'easeOut' }} // Smooth cinematic transition
     >
       {/* Freelance Projects Section */}
       <div className="mt-12 w-full flex justify-center md:mt-28">
@@ -86,7 +86,9 @@ const FreelanceProjects = () => {
             <button
               key={index}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                currentIndex === index ? "bg-[var(--foreground)] scale-125" : "bg-[var(--secondary)] opacity-50"
+                currentIndex === index
+                  ? 'bg-[var(--foreground)] scale-125'
+                  : 'bg-[var(--secondary)] opacity-50'
               }`}
               onClick={() => setCurrentIndex(index)}
             ></button>
